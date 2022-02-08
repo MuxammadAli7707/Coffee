@@ -5,14 +5,207 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Coffeeroasters</title>
+  <link rel="shortcut icon" href="imgs/Combined Shape.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <section id="hero" class="hero">
+    <header class="site-header header">
+      <div class="container">
+        <div class="header__main row middle-xs middle-lg between-xs between-lg">
+          <div class="header__img-box">
+            <a href="#">
+              <img class="header__logo" src="imgs/cofee-logo.svg" alt="cofee-logo">
+            </a>
+          </div>
+          <nav id="navbar" class="header__nav nav">
+            <ul class="nav__list row middle-xs">
+              <li class="nav__item">
+                <a class="nav__link" href="#">HOME</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">CREATE YOUR PLAN</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__menu">
+            <i id="menu" class='bx bx-menu'></i>
+          <button id="close" class="menu-close">
+            <i class='bx bx-x' ></i></button>
+          </button>
+        </div>
+      </div>
+    </header>
 
+    <div class="container">
+      <div class="hero__main">
+        <div class="hero__entry">
+          <h2 class="hero__title">Great coffee made simple.</h2>
+          <p class="hero__text">Start your mornings with the world's best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+          <button class="hero__btn btn">Create your plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <main>
+    <section id="cofe" class="cofe">
+      <div class="container">
+        <div class="cofe__main">
+          <ul class="cofe__list row middle-xs middle-lg between-xs between-lg">
+            <li class="cofe__item">
+              <div class="cofe__box">
+                <img class="cofe__img" src="imgs/kopi1 copy.png" alt="kopi1">
+                <div class="cofe__desc">
+                  <h4 class="cofe__title">Gran Espresso</h4>
+                  <p class="cofe__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                </div>
+              </div>
+            </li>
+            <li class="cofe__item">
+              <div class="cofe__box">
+                <img class="cofe__img" src="imgs/kopi1 copy.png" alt="kopi1">
+               <div class="cofe__desc">
+                <h4 class="cofe__title">Planalto</h4>
+                <p class="cofe__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+               </div>
+              </div>
+            </li>
+            <li class="cofe__item">
+              <div class="cofe__box">
+                <img class="cofe__img" src="imgs/kopi1 copy.png" alt="kopi1">
+                <div class="cofe__desc">
+                  <h4 class="cofe__title">Piccollo</h4>
+                  <p class="cofe__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                </div>
+              </div>
+            </li>
+            <li class="cofe__item">
+              <div class="cofe__box">
+                <img class="cofe__img" src="imgs/kopi1 copy.png" alt="kopi1">
+                <div class="cofe__desc">
+                  <h4 class="cofe__title">Danche</h4>
+                  <p class="cofe__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="chose" class="chose">
+      <div class="container">
+        <div class="chose__main">
+          <div class="chose__desc center-xs">
+            <h3 class="chose__title">Why choose us?</h3>
+            <p class="chose__text">A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+          </div>
+          <ul class="chose__list row middle-xs col-lg-12">
+            <li class="chose__item col-xs-4">
+              <div class="chose__box center-xs middle-xs">
+                <img class="chose__img" src="imgs/coffee-bean.svg" alt="coffee-bean">
+                <h4 class="chose__info">Best quality</h4>
+                <p class="chose__seb">Discover an endless variety of the world's best artisan coffee from each of our roasters.</p>
+              </div>
+            </li>
+            <li class="chose__item col-xs-4">
+              <div class="chose__box center-xs middle-xs">
+                <img class="chose__img" src="imgs/chose-two.svg" alt="coffee-bean">
+                <h4 class="chose__info">Exclusive benefits</h4>
+                <p class="chose__seb">Discover an endless variety of the world's best artisan coffee from each of our roasters.</p>
+              </div>
+            </li>
+            <li class="chose__item col-xs-4">
+              <div class="chose__box center-xs middle-xs">
+                <img class="chose__img" src="imgs/shiip.svg" alt="coffee-bean">
+                <h4 class="chose__info">Free shipping</h4>
+                <p class="chose__seb">Discover an endless variety of the world's best artisan coffee from each of our roasters.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <h3 class="info__title">How it works</h3>
+        <img class="info__img" src="imgs/line.png" alt="line">
+        
+        <ul class="info__list row middle-xs">
+          <li class="info__item">
+            <div class="info__main">
+              <h2 class="info__num">01</h2>
+              <h4 class="info__desc">Pick your coffee</h4>
+              <p class="info__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <div class="info__main">
+              <h2 class="info__num">02</h2>
+              <h4 class="info__desc">Choose the frequency</h4>
+              <p class="info__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <div class="info__main">
+              <h2 class="info__num">03</h2>
+              <h4 class="info__desc">Receive and enjoy!</h4>
+              <p class="info__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="info__button">
+          <button class="info__btn btn">Create your plan</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__box row middle-xs">
+          <div class="footer__logo">
+            <a href="#">
+              <img class="footer__img" src="imgs/cofee-footer.svg" alt="cofe">
+            </a>
+          </div>
+          <ul class="footer__list row middle-xs">
+            <li class="footer__item">
+              <a class="footer__link" href="#">HOME</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ABOUT US</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">CREATE YOUR PLAN</a>
+            </li>
+          </ul>
+          <ul class="footer__socials socials row middle-xs">
+            <li class="socials__item">
+              <a href="#"><i class='socials-icon bx bxl-facebook-square'></i></a>
+            </li>
+            <li class="socials__item">
+              <a href="#"><i class='socials-icon bx bxl-twitter' ></i></a>
+            </li>
+            <li class="socials__item">
+              <a href="#"><i class='socials-icon bx bxl-instagram' ></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 
