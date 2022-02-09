@@ -48,7 +48,7 @@ body {
   color: #83888f;
 }
 
-.nav__item:hover .nav__link {
+.nav__item:active .nav__link {
   color: #333d4b;
 }
 .header__menu {
@@ -179,7 +179,7 @@ body {
   padding: 15px 31px;
 }
 
-.btn:hover {
+.btn:active {
   transition: all 0.2s ease;
   background-color: #66d2cf;
 }
@@ -434,7 +434,9 @@ body {
 }
 
 .footer__main {
-  padding: 47px 0;
+  padding: 47px 40px;
+  background-color: #2c343e;
+  margin-bottom: 50px;
 }
 
 .footer__img {
@@ -459,7 +461,7 @@ body {
   color: #83888f;
   transition: all 0.2s ease;
 }
-.footer__item:hover .footer__link {
+.footer__item:active .footer__link {
   color: #fefcf7;
   transition: all 0.2s ease;
 }
@@ -476,12 +478,8 @@ body {
   transition: all 0.2s ease;
 }
 
-.socials__item:hover .socials-icon {
+.socials__item:active .socials-icon {
   transition: all 0.2s ease;
   color: #fdd6ba;;
 }
 
-#footer {
-  background-color: #2c343e;
-  margin-bottom: 50px;
-}
