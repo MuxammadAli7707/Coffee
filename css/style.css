@@ -227,18 +227,24 @@ body {
 }
 
 
-.cofe__main{
+.cofe__main {
   background-image: url(../imgs/cofe-paket.svg);
   background-repeat: no-repeat;
-  width: 100%;
-  height: 196px;
-  padding-top: 120px;
+  background-position: top center;
+  background-size: 100%;
+  padding-top: 126px;
 }
 .cofe__list {
   list-style: none;
 }
 .cofe__desc {
   text-align: center;
+}
+
+.cofe__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cofe__img {
@@ -258,56 +264,44 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #333d4b;
-  width: 255px;
+  padding: 0 20px;
 }
 
 
-@media screen and (max-width: 768px) {
-  .cofe__main {
-    background-image: url(../imgs/pakettwo.svg);
-    background-repeat: no-repeat;
-    width: 685px;
-    height: 196px;
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 85%;
   }
-  .cofe__list {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .cofe__box {
-    display: flex;
+}
+
+
+@media screen and (max-width: 767px) {
+  .cofe__text {
+    padding: 0 100px;
+    margin-bottom: 48px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .cofe__list {
-    flex-direction: column;
-    justify-content: center;
+  .cofe__text {
+    padding: 0 55px;
   }
   .cofe__item {
-    flex-direction: column;
-  }
-  .cofe__box {
-    text-align: center;
-  }
-  .cofe__text {
-    width: 282px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 #cofe {
-  margin-bottom: 500px;
+  margin-bottom: 150px;
 }
 
-
-.chose__main {
+.chose__desc {
   width: 100%;
   height: 526px;
   background-color: #282f38;
   border-radius: 10px;
-}
-.chose__desc {
   padding-top: 110px;
-  margin-bottom: 86px;
 }
 
 .chose__title {
@@ -327,17 +321,24 @@ body {
   margin: 0 auto;
 }
 .chose__list {
+  position: relative;
   list-style: none;
+  top: -220px;  
 }
 
 .chose__box {
   padding-top: 72px;
   flex-direction: column;
   margin: 0 auto;
-  width: 350px;
+  width: 90%;
   height: 382px;
   background-color: #0e8784;
   border-radius: 8px;
+}
+
+.chose {
+  display: flex;
+  flex-direction: column;
 }
 
 .chose__img {
@@ -362,8 +363,16 @@ body {
   padding-bottom: 48px;
 }
 
-#chose {
-  margin-bottom: 500px;
+
+@media screen and (max-width: 1023px) {
+  .chose__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .chose__item {
+    padding-bottom: 24px;
+  }
 }
 
 @media screen and (max-widht: 992px) {
@@ -372,6 +381,33 @@ body {
   }
   .chose__item {
     flex-flow: column wrap;
+  }
+  .chose__box {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chose__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .chose__text {
+    width: 100%;
+  }
+  .chose__list {
+    position: relative;
+    list-style: none;
+    top: -190px;  
+  }
+}
+@media screen and (max-width: 440px) {
+  .chose__list {
+    padding-top: 60px;
+    position: relative;
+    list-style: none;
+    top: -170px;  
   }
 }
 
@@ -413,7 +449,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #333d4b;
-  width: 285px;
+  width: 225px;
 }
 
 .info__btn {
@@ -425,12 +461,31 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .info__item {
-    display: flex;
-    flex-direction: column;
+  .info__list {
+    text-align: center;
     justify-content: center;
     align-items: center;
-  }  
+    flex-direction: column;
+  }
+  .info__text {
+    width: 100%;
+  }
+  .info__desc {
+    width: 100%;
+  }
+  .info__main {
+    padding-bottom: 30px;
+  }
+  .info__img {
+    display: none;
+  }
+  .info__title {
+    text-align: center;
+  }
+  .info__button {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__main {
@@ -483,3 +538,29 @@ body {
   color: #fdd6ba;;
 }
 
+@media screen and (max-width: 992px) {
+  .footer__box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__img {
+    margin: 0 auto;
+  }
+  .footer__list {
+    padding-top: 20px;
+    padding-bottom: 65px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}

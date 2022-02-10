@@ -13,3 +13,16 @@ elClosemodal.addEventListener('click', function () {
   elopen.classList.remove('show');
   elClosemodal.classList.remove('show-it');
 });
+
+
+let elanswer = document.getElementById('answerModal');
+let elclosed = document.getElementById('closed');
+let elbingo = document.getElementById('bingo');
+
+elanswer.addEventListener('click', function () {
+  elbingo.classList.add('welcome');
+});
+
+elclosed.addEventListener('click', function () {
+  elbingo.classList.toggle('end');
+});
